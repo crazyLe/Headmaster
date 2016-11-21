@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="214" id="KGk-i7-Jjw" customClass="ValidateContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手持身份证照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa2-v0-itB">
+                        <rect key="frame" x="20" y="15" width="120" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="8Ot-ag-2Hx"/>
+                            <constraint firstAttribute="height" constant="15" id="Yos-Sv-lb3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQZ-mr-q0l">
+                        <rect key="frame" x="20" y="45" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="jHc-ms-Az4"/>
+                            <constraint firstAttribute="height" constant="130" id="pSs-P8-SQt"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="mine_upload"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shili-photo" translatesAutoresizingMaskIntoConstraints="NO" id="6EP-84-6VY">
+                        <rect key="frame" x="170" y="45" width="130" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="DrN-Zj-BDp"/>
+                            <constraint firstAttribute="width" constant="130" id="Qwm-7l-9qy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="示例图片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Taz-s7-jJL">
+                        <rect key="frame" x="170" y="155" width="130" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Wzl-cF-uEV"/>
+                            <constraint firstAttribute="width" constant="130" id="rr0-b5-HCx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFV-Wj-Q9t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="P0J-CM-lTB"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0M-jY-FVS">
+                        <rect key="frame" x="0.0" y="189" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="pcU-V7-GE7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="yFV-Wj-Q9t" secondAttribute="trailing" constant="-8" id="0fc-F4-c5c"/>
+                    <constraint firstItem="VQZ-mr-q0l" firstAttribute="top" secondItem="Sa2-v0-itB" secondAttribute="bottom" constant="15" id="JMZ-zl-lzA"/>
+                    <constraint firstItem="Sa2-v0-itB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="LNJ-XQ-jRu"/>
+                    <constraint firstItem="Taz-s7-jJL" firstAttribute="top" secondItem="6EP-84-6VY" secondAttribute="bottom" id="TvX-CN-9cZ"/>
+                    <constraint firstItem="Sa2-v0-itB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="WCB-KM-aHA"/>
+                    <constraint firstItem="VQZ-mr-q0l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Xd4-tS-fYl"/>
+                    <constraint firstItem="q0M-jY-FVS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Xer-cH-ZaS"/>
+                    <constraint firstItem="6EP-84-6VY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="Ywx-JW-eyG"/>
+                    <constraint firstItem="yFV-Wj-Q9t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="ot2-y2-Bm6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="q0M-jY-FVS" secondAttribute="trailing" constant="-8" id="sVf-B0-v75"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="q0M-jY-FVS" secondAttribute="bottom" constant="-8.5" id="t3Q-if-sZa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Taz-s7-jJL" secondAttribute="trailing" constant="12" id="urx-MI-Dwf"/>
+                    <constraint firstItem="yFV-Wj-Q9t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="x2B-di-hNz"/>
+                    <constraint firstAttribute="trailing" secondItem="6EP-84-6VY" secondAttribute="trailing" constant="20" id="zKx-sf-M3m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pictureBtn" destination="VQZ-mr-q0l" id="fWN-FV-0Yl"/>
+                <outlet property="titleLab" destination="Sa2-v0-itB" id="efk-Td-hcb"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="328"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_upload" width="87" height="87"/>
+        <image name="shili-photo" width="143" height="143"/>
+    </resources>
+</document>

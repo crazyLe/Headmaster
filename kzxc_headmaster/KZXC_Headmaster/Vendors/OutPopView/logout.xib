@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MCj-rk-iXo" customClass="logout">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="状态码失效，请重新登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUe-dQ-yEg">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="4xY-Q9-Ney"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4E-PX-aT0">
+                    <rect key="frame" x="0.0" y="55" width="200" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="45n-OY-T6j"/>
+                    </constraints>
+                    <state key="normal" title="确  定"/>
+                    <connections>
+                        <action selector="sureClick:" destination="MCj-rk-iXo" eventType="touchUpInside" id="Zr8-rg-9tS"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cug-jA-uEa">
+                    <rect key="frame" x="0.0" y="56" width="200" height="1"/>
+                    <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="0CN-Ut-xWF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C4E-PX-aT0" secondAttribute="trailing" id="GQZ-Cu-2Ag"/>
+                <constraint firstItem="Cug-jA-uEa" firstAttribute="top" secondItem="MCj-rk-iXo" secondAttribute="top" constant="56" id="HEd-0Z-vmg"/>
+                <constraint firstItem="dUe-dQ-yEg" firstAttribute="top" secondItem="MCj-rk-iXo" secondAttribute="top" id="MEU-xH-Wzx"/>
+                <constraint firstItem="C4E-PX-aT0" firstAttribute="leading" secondItem="MCj-rk-iXo" secondAttribute="leading" id="caG-uF-MbL"/>
+                <constraint firstItem="Cug-jA-uEa" firstAttribute="leading" secondItem="MCj-rk-iXo" secondAttribute="leading" id="hYy-oc-RcP"/>
+                <constraint firstItem="C4E-PX-aT0" firstAttribute="top" secondItem="dUe-dQ-yEg" secondAttribute="bottom" id="iaw-3H-o1g"/>
+                <constraint firstAttribute="trailing" secondItem="Cug-jA-uEa" secondAttribute="trailing" id="r58-lT-FhD"/>
+                <constraint firstItem="dUe-dQ-yEg" firstAttribute="leading" secondItem="MCj-rk-iXo" secondAttribute="leading" id="t1i-yL-pdi"/>
+                <constraint firstAttribute="trailing" secondItem="dUe-dQ-yEg" secondAttribute="trailing" id="u24-Cj-KES"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="showMsg" destination="dUe-dQ-yEg" id="gad-sa-D4M"/>
+                <outlet property="sure" destination="C4E-PX-aT0" id="HQr-k4-asN"/>
+            </connections>
+            <point key="canvasLocation" x="186" y="-132.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="256" id="KGk-i7-Jjw" customClass="HomeTopCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyO-qo-Cwn">
+                        <rect key="frame" x="10" y="10" width="70" height="75"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="75" id="7Aa-EC-dH0"/>
+                            <constraint firstAttribute="width" constant="70" id="DIj-85-36o"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="-60" minY="50" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="5" minY="-20" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="校长课堂" image="firgroup_0">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6y8-ZM-bIz"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmm-Wx-x05">
+                        <rect key="frame" x="100" y="10" width="70" height="75"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="-60" minY="50" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="5" minY="-20" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="校长圈" image="firgroup_1">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="h5o-yU-2s8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Un7-RF-Kgw">
+                        <rect key="frame" x="280" y="10" width="70" height="75"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="-60" minY="50" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="5" minY="-20" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="我的订单" image="firgroup_3">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Wpk-0Z-UrV"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-2h-oCF">
+                        <rect key="frame" x="190" y="10" width="70" height="75"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="-60" minY="50" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="5" minY="-20" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="关注度" image="firgroup_2">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Con-v3-Flj"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RyO-qo-Cwn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5Fv-kC-AZS"/>
+                    <constraint firstItem="Un7-RF-Kgw" firstAttribute="top" secondItem="RyO-qo-Cwn" secondAttribute="top" id="9hf-sL-5kP"/>
+                    <constraint firstItem="dHb-2h-oCF" firstAttribute="leading" secondItem="gmm-Wx-x05" secondAttribute="trailing" constant="20" id="GN0-Ro-yko"/>
+                    <constraint firstItem="gmm-Wx-x05" firstAttribute="top" secondItem="RyO-qo-Cwn" secondAttribute="top" id="GXr-NQ-Uyl"/>
+                    <constraint firstItem="gmm-Wx-x05" firstAttribute="width" secondItem="RyO-qo-Cwn" secondAttribute="width" id="GeM-JB-RxM"/>
+                    <constraint firstItem="gmm-Wx-x05" firstAttribute="height" secondItem="RyO-qo-Cwn" secondAttribute="height" id="H15-QC-QCS"/>
+                    <constraint firstItem="dHb-2h-oCF" firstAttribute="height" secondItem="RyO-qo-Cwn" secondAttribute="height" id="IG4-EA-Ipa"/>
+                    <constraint firstItem="dHb-2h-oCF" firstAttribute="top" secondItem="RyO-qo-Cwn" secondAttribute="top" id="IHW-MX-ufz"/>
+                    <constraint firstItem="Un7-RF-Kgw" firstAttribute="width" secondItem="RyO-qo-Cwn" secondAttribute="width" id="JlA-MK-X9e"/>
+                    <constraint firstItem="RyO-qo-Cwn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Kh8-Du-BGu"/>
+                    <constraint firstItem="dHb-2h-oCF" firstAttribute="width" secondItem="RyO-qo-Cwn" secondAttribute="width" id="hhx-9W-Gx0"/>
+                    <constraint firstItem="Un7-RF-Kgw" firstAttribute="height" secondItem="RyO-qo-Cwn" secondAttribute="height" id="hkU-66-3pj"/>
+                    <constraint firstItem="gmm-Wx-x05" firstAttribute="leading" secondItem="RyO-qo-Cwn" secondAttribute="trailing" constant="20" id="lj6-GF-A8u"/>
+                    <constraint firstItem="Un7-RF-Kgw" firstAttribute="leading" secondItem="dHb-2h-oCF" secondAttribute="trailing" constant="20" id="m32-7a-Vmm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn1" destination="RyO-qo-Cwn" id="crW-5E-gVc"/>
+                <outlet property="btn2" destination="gmm-Wx-x05" id="eTU-op-R7U"/>
+                <outlet property="btn3" destination="dHb-2h-oCF" id="FZa-Sc-hFb"/>
+                <outlet property="btn4" destination="Un7-RF-Kgw" id="5ZD-lk-99M"/>
+                <outlet property="firleft" destination="5Fv-kC-AZS" id="d9d-H1-gL0"/>
+                <outlet property="four" destination="m32-7a-Vmm" id="LF6-sd-ct8"/>
+                <outlet property="secleft" destination="lj6-GF-A8u" id="LvQ-oY-jig"/>
+                <outlet property="thileft" destination="GN0-Ro-yko" id="dcj-Wt-dUO"/>
+            </connections>
+            <point key="canvasLocation" x="242" y="277"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="firgroup_0" width="60" height="60"/>
+        <image name="firgroup_1" width="60" height="60"/>
+        <image name="firgroup_2" width="60" height="60"/>
+        <image name="firgroup_3" width="60" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UploadCoachCarPicCell" rowHeight="101" id="KGk-i7-Jjw" customClass="UploadCoachCarPicCell">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZZ-Ak-mbI">
+                        <rect key="frame" x="10" y="10" width="129" height="80"/>
+                        <state key="normal" backgroundImage="mine_upload"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0c-TJ-tTS">
+                        <rect key="frame" x="149" y="10" width="128" height="80"/>
+                        <state key="normal" backgroundImage="mine_upload"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXu-er-ZXM">
+                        <rect key="frame" x="287" y="10" width="129" height="80"/>
+                        <state key="normal" backgroundImage="mine_upload"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dXu-er-ZXM" secondAttribute="trailing" constant="10" id="7YP-HF-JbD"/>
+                    <constraint firstItem="dXu-er-ZXM" firstAttribute="width" secondItem="Q0c-TJ-tTS" secondAttribute="width" id="QCW-xO-t3Z"/>
+                    <constraint firstItem="Q0c-TJ-tTS" firstAttribute="centerY" secondItem="VZZ-Ak-mbI" secondAttribute="centerY" id="Syy-OH-iDE"/>
+                    <constraint firstItem="VZZ-Ak-mbI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Uqp-s2-XWz"/>
+                    <constraint firstItem="dXu-er-ZXM" firstAttribute="centerY" secondItem="Q0c-TJ-tTS" secondAttribute="centerY" id="aG6-n0-9Us"/>
+                    <constraint firstItem="Q0c-TJ-tTS" firstAttribute="leading" secondItem="VZZ-Ak-mbI" secondAttribute="trailing" constant="10" id="aGa-52-J12"/>
+                    <constraint firstItem="VZZ-Ak-mbI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="apn-Sn-wfi"/>
+                    <constraint firstAttribute="bottom" secondItem="VZZ-Ak-mbI" secondAttribute="bottom" constant="10" id="fJb-QI-IfV"/>
+                    <constraint firstItem="Q0c-TJ-tTS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="iXf-8F-TRx"/>
+                    <constraint firstItem="dXu-er-ZXM" firstAttribute="height" secondItem="Q0c-TJ-tTS" secondAttribute="height" id="o1h-dR-qCp"/>
+                    <constraint firstItem="Q0c-TJ-tTS" firstAttribute="height" secondItem="VZZ-Ak-mbI" secondAttribute="height" id="qLc-ra-f3N"/>
+                    <constraint firstItem="Q0c-TJ-tTS" firstAttribute="width" secondItem="VZZ-Ak-mbI" secondAttribute="width" id="vSx-Cp-jr9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftImgBtn" destination="VZZ-Ak-mbI" id="Cey-fP-UKv"/>
+                <outlet property="middleImgBtn" destination="Q0c-TJ-tTS" id="FBz-Oo-hSZ"/>
+                <outlet property="rightImgBtn" destination="dXu-er-ZXM" id="3tK-jg-Zvh"/>
+            </connections>
+            <point key="canvasLocation" x="434" y="341.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_upload" width="87" height="87"/>
+    </resources>
+</document>

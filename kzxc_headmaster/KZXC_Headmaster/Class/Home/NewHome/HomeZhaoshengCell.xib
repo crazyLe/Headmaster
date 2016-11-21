@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="253" id="KGk-i7-Jjw" customClass="HomeZhaoshengCell">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="376" height="259"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZT1-gt-Jzi">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="8WV-Gk-UsX"/>
+                            <constraint firstAttribute="height" constant="170" id="na1-U0-JU8"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="ad_leftImage"/>
+                        <connections>
+                            <action selector="zhaoshengClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="89o-un-JX4"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="招生神器" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctM-C1-Muq">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="MyD-lx-3nW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUb-jq-rAc">
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="uQO-Hc-bG6"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-F5-gZd">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="8qw-oN-iKP"/>
+                            <constraint firstAttribute="width" secondItem="ioz-F5-gZd" secondAttribute="height" multiplier="18:19" id="Mnj-Vx-Ldm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="-60" minY="65" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="-20" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="代金劵" image="ad_right_two">
+                            <color key="titleColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="zhaoshengClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BQS-HH-fmw"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKY-gQ-MGL">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="AKY-gQ-MGL" secondAttribute="height" multiplier="18:19" id="FlU-3w-1Vt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="-60" minY="65" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="-20" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="教练招生团" image="ad_right_one">
+                            <color key="titleColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="zhaoshengClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2JM-nO-PKG"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="204" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnu-BE-cmx">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="pnu-BE-cmx" secondAttribute="height" multiplier="18:19" id="SPs-JB-Gvu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="-60" minY="65" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="-20" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="赏金猎人" image="ad_right_three">
+                            <color key="titleColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="zhaoshengClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2Qb-Is-log"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="205" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jne-WT-N4p">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jne-WT-N4p" secondAttribute="height" multiplier="18:19" id="Vo7-IX-yV5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <inset key="titleEdgeInsets" minX="-60" minY="65" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="10" minY="-20" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="招生推广" image="ad_right_four">
+                            <color key="titleColor" red="0.5607843137254902" green="0.5607843137254902" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="zhaoshengClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IR6-rP-Rvw"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nUb-jq-rAc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="2hI-7T-NUA"/>
+                    <constraint firstItem="pnu-BE-cmx" firstAttribute="width" secondItem="AKY-gQ-MGL" secondAttribute="width" id="4uj-VU-aGz"/>
+                    <constraint firstItem="jne-WT-N4p" firstAttribute="top" secondItem="ioz-F5-gZd" secondAttribute="bottom" constant="1" id="9cI-vF-wkE"/>
+                    <constraint firstItem="ioz-F5-gZd" firstAttribute="height" secondItem="AKY-gQ-MGL" secondAttribute="height" id="A7I-3c-Ogb"/>
+                    <constraint firstItem="ctM-C1-Muq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Avj-ti-4Vl"/>
+                    <constraint firstItem="nUb-jq-rAc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Dwf-LW-5N4"/>
+                    <constraint firstItem="ioz-F5-gZd" firstAttribute="top" secondItem="AKY-gQ-MGL" secondAttribute="top" id="KHR-eu-0D9"/>
+                    <constraint firstAttribute="trailing" secondItem="ioz-F5-gZd" secondAttribute="trailing" id="NJw-JN-7xE"/>
+                    <constraint firstAttribute="trailing" secondItem="jne-WT-N4p" secondAttribute="trailing" id="PHu-fv-MdM"/>
+                    <constraint firstItem="ioz-F5-gZd" firstAttribute="width" secondItem="AKY-gQ-MGL" secondAttribute="width" id="QVf-of-UCb"/>
+                    <constraint firstItem="ZT1-gt-Jzi" firstAttribute="top" secondItem="nUb-jq-rAc" secondAttribute="bottom" constant="10" id="R2J-N2-u3a"/>
+                    <constraint firstItem="jne-WT-N4p" firstAttribute="leading" secondItem="pnu-BE-cmx" secondAttribute="trailing" id="hW1-71-EHL"/>
+                    <constraint firstItem="ZT1-gt-Jzi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hmD-Sv-aaH"/>
+                    <constraint firstAttribute="trailing" secondItem="nUb-jq-rAc" secondAttribute="trailing" id="mSJ-h5-SG9"/>
+                    <constraint firstItem="ioz-F5-gZd" firstAttribute="leading" secondItem="AKY-gQ-MGL" secondAttribute="trailing" id="nR4-kH-8tl"/>
+                    <constraint firstItem="ctM-C1-Muq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="r50-yd-g9g"/>
+                    <constraint firstItem="ioz-F5-gZd" firstAttribute="top" secondItem="nUb-jq-rAc" secondAttribute="bottom" id="t2L-KM-xdC"/>
+                    <constraint firstItem="jne-WT-N4p" firstAttribute="top" secondItem="pnu-BE-cmx" secondAttribute="top" id="xBB-8q-bdl"/>
+                    <constraint firstItem="jne-WT-N4p" firstAttribute="width" secondItem="AKY-gQ-MGL" secondAttribute="width" id="xMQ-xy-CgZ"/>
+                    <constraint firstAttribute="trailing" secondItem="ctM-C1-Muq" secondAttribute="trailing" id="yIH-Vf-iAB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn1" destination="AKY-gQ-MGL" id="Tjv-U9-S9k"/>
+                <outlet property="btn2" destination="ioz-F5-gZd" id="bDM-mP-Jd6"/>
+                <outlet property="btn3" destination="pnu-BE-cmx" id="E0y-Ie-uoT"/>
+                <outlet property="btn4" destination="jne-WT-N4p" id="PdN-jg-5gt"/>
+                <outlet property="btnW" destination="8qw-oN-iKP" id="uyx-yX-J3x"/>
+                <outlet property="zhaosheng" destination="ZT1-gt-Jzi" id="w5z-s9-wxN"/>
+                <outlet property="zhaoshengleft" destination="hmD-Sv-aaH" id="bTU-sk-SOS"/>
+            </connections>
+            <point key="canvasLocation" x="299" y="284"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ad_leftImage" width="148" height="170"/>
+        <image name="ad_right_four" width="61" height="61"/>
+        <image name="ad_right_one" width="60" height="60"/>
+        <image name="ad_right_three" width="61" height="61"/>
+        <image name="ad_right_two" width="59" height="60"/>
+    </resources>
+</document>

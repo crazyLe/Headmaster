@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="InvitationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="Zgg-P9-Pfl">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="0Dv-uk-bC7"/>
+                            <constraint firstAttribute="width" constant="45" id="5d2-GY-e2C"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="17.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="钱辰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AD1-km-ZuQ">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="LUC-Wd-gfV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1b-B3-Dqv">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="IiV-kN-wbL"/>
+                            <constraint firstAttribute="width" constant="45" id="sQV-hf-P0R"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="yaoqing_r"/>
+                        <connections>
+                            <action selector="buttonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tkp-9L-JgK"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybg-Ew-YFj">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="CMv-qN-qW9"/>
+                            <constraint firstAttribute="width" constant="45" id="VjN-M7-vRO"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="phone"/>
+                        <connections>
+                            <action selector="buttonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wRP-WN-ap6"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r1b-B3-Dqv" firstAttribute="leading" secondItem="Ybg-Ew-YFj" secondAttribute="trailing" constant="15" id="7ad-Ok-bmF"/>
+                    <constraint firstItem="Ybg-Ew-YFj" firstAttribute="leading" secondItem="AD1-km-ZuQ" secondAttribute="trailing" constant="20" id="9hJ-Gt-qGK"/>
+                    <constraint firstItem="Zgg-P9-Pfl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Dkm-DX-Zcj"/>
+                    <constraint firstItem="Ybg-Ew-YFj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="5.25" id="Jah-Yi-FAl"/>
+                    <constraint firstItem="Zgg-P9-Pfl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PXY-3Z-1yt"/>
+                    <constraint firstItem="r1b-B3-Dqv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="5.25" id="ad5-Iw-Azb"/>
+                    <constraint firstItem="AD1-km-ZuQ" firstAttribute="leading" secondItem="Zgg-P9-Pfl" secondAttribute="trailing" constant="15" id="fXX-1G-3c7"/>
+                    <constraint firstItem="AD1-km-ZuQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i7M-6m-7nG"/>
+                    <constraint firstItem="r1b-B3-Dqv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-7" id="p57-38-lf1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="btn1" destination="Ybg-Ew-YFj" id="djT-4R-rdN"/>
+                <outlet property="btn2" destination="r1b-B3-Dqv" id="sk5-8o-YhL"/>
+                <outlet property="headimg" destination="Zgg-P9-Pfl" id="YVc-lf-UhR"/>
+                <outlet property="name" destination="AD1-km-ZuQ" id="qID-Wu-LIw"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon" width="60" height="60"/>
+        <image name="phone" width="46" height="46"/>
+        <image name="yaoqing_r" width="48" height="27"/>
+    </resources>
+</document>
